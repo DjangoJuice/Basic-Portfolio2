@@ -1,5 +1,8 @@
 body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/bo.png");
+    margin: 0;
+    padding: 0;
 }
 
 .paragraph-me {
@@ -19,11 +22,10 @@ body {
 header {
     background-color: #ffffff;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    /*border-change*/
-    border: 3px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
     height: 65px;
-    /*eh margin-top?*/
-    margin-top: 0;
+    /*eh margin-top?
+    margin-top: 0;*/
 }
 
 .header-center {
@@ -32,8 +34,8 @@ header {
     margin-right: auto;
     /*border: 2px solid black;*/
     position: relative;
-    /*eh margin-top?*/
-    margin-top: 0;
+    /*eh margin-top?
+    margin-top: 0;*/
 }
 
 #header-name {
@@ -72,11 +74,19 @@ button {
     right: 200px;
 }
 
+#button-about:hover {
+    font-size: 11pt;
+}   
+
 #button-portfolio {
     position: absolute;
     top: 17.5px;
     right: 130px;
 }
+
+#button-portfolio:hover {
+    font-size: 11pt;
+}   
 
 #button-contact {
     position: absolute;
@@ -85,11 +95,16 @@ button {
     border-right: none;
 }
 
+#button-contact:hover {
+    font-size: 11pt;
+}   
+
 
 section {
-    background-image: url("../images/bo.png");
+    /*background-image: url("../images/bo.png");*/
     height: 100%;
     padding-top: 30px;
+    padding-bottom: 0;
 }
 
 #my-pic {
@@ -112,9 +127,11 @@ section {
 .main-content {
     background-color: white;
     width: 960px;
+    margin: 0 auto;
+    /*border: 2px solid red;
     margin-left: auto;
     margin-right: auto;
-    clear: both;
+    clear: both;*/
 }
 footer {
     background-color: #666666;
