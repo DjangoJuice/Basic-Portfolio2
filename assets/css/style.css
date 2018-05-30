@@ -128,6 +128,7 @@ section {
     background-color: white;
     width: 960px;
     margin: 0 auto;
+    margin-bottom: 50px;
     /*border: 2px solid red;
     margin-left: auto;
     margin-right: auto;
@@ -138,8 +139,8 @@ footer {
     border-top: 5px solid #4aaaa5;
     height: 50px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    position: sticky;
+    /*bottom: 0;*/
 }
 
 label {
@@ -207,11 +208,23 @@ label {
     height: 25px;
     width: 75px;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #button-submit:hover {
     background-color: black;
+}
+
+.portfolio-pic {
+    margin-right: 25px;
+    padding-bottom: 40px;
+}
+
+#portfolio-photo-div {
+    /*border: 2px solid red;*/
+    margin-left: 20px;
+    padding-bottom: 50px;
+    width: 720px;
 }
 
 .clearfix::after {
