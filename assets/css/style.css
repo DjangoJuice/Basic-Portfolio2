@@ -99,7 +99,7 @@ section {
     width: 150px;
 }
 
-#about-me {
+.main-content-header {
     color: #4aaaa5;
     border-bottom: 3px solid #cccccc;
     padding-top: 30px;
@@ -124,6 +124,79 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+label {
+    color: #777777;
+    
+}
+
+#label-name {
+    float: left;
+    width: 918px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    /*border: 2px solid red;*/
+}
+
+#input-name {
+    float: left;
+    width: 920px;
+    height: 28px;
+    margin-left: 20px;
+    /*border: 2px solid red;*/
+}
+
+#label-email {
+    float: left;
+    width: 918px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    /*border: 2px solid red;*/
+}
+
+#input-email {
+    float: left;
+    width: 920px;
+    height: 28px;
+    margin-left: 20px;
+    /*border: 2px solid red;*/
+}
+
+#label-message {
+    float: left;
+    width: 918px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    /*border: 2px solid red;*/
+}
+
+#input-message {
+    float: left;
+    width: 920px;
+    height: 28px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    resize: vertical;
+    /*clear: both;
+    border: 2px solid red;*/
+}
+
+#button-submit {
+    background-color: #4aaaa5;
+    color: white;
+    float: left;
+    height: 25px;
+    width: 75px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#button-submit:hover {
+    background-color: black;
+}
+
 .clearfix::after {
     content: "";
     display: block;
