@@ -108,6 +108,7 @@ section {
 }
 
 #my-pic {
+    /*display: inline-block; maybe?*/
     float: left;
     padding: 0 20px;
     height: 150px;
@@ -218,6 +219,8 @@ label {
 .portfolio-pic {
     margin-right: 25px;
     padding-bottom: 40px;
+    z-index: 0;
+    position: relative;
 }
 
 #portfolio-photo-div {
@@ -231,4 +234,20 @@ label {
     content: "";
     display: block;
     clear: both;
+}
+
+/* T E S T I N G */
+#test-pic {
+    z-index: 0;
+    position: relative;
+}
+#test-div {
+    z-index: 9;
+    background-color: green;
+    color: white;
+    height: 35px;
+    position: absolute;
+    bottom: 10px;
+    width: 150px;
+    text-align: center;
 }
