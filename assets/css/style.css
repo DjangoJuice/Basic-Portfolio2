@@ -216,19 +216,41 @@ label {
     background-color: black;
 }
 
-.portfolio-pic {
-    margin-right: 25px;
-    padding-bottom: 40px;
-    z-index: 0;
-    position: relative;
-}
-
-#portfolio-photo-div {
+.portfolio-photo-div {
     /*border: 2px solid red;*/
     margin-left: 20px;
     padding-bottom: 50px;
     width: 720px;
 }
+
+.portfolio-photo {
+    margin-right: 25px;
+    padding-bottom: 40px;
+    z-index: 0;
+    position: relative;
+    float: left;
+}
+
+.portfolio-photo-banner {
+    background-color: green;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 65px;
+    height: 65px;
+    width: 320px;
+    position: absolute;
+    top: 160px;
+    z-index: 1;
+    /*border: 2px solid red;*/
+}
+
+/*.portfolio-photo-span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}*/
 
 .clearfix::after {
     content: "";
@@ -236,12 +258,12 @@ label {
     clear: both;
 }
 
-/* T E S T I N G */
+/* T E S T I N G 
 #test-pic {
     z-index: 0;
     position: relative;
 }
-#test-div {
+.test-div {
     z-index: 9;
     background-color: green;
     color: white;
@@ -250,4 +272,4 @@ label {
     bottom: 10px;
     width: 150px;
     text-align: center;
-}
+}*/
