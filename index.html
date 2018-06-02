@@ -19,6 +19,10 @@
             <h1 id="header-name">
                 Mike Stewart
             </h1>
+            <button type="button" onclick="document.getElementById('about-hinduism').innerHTML = '(Not About Me But) About Hinduism!'">Click Me!
+                </button>
+            <button type="button" onclick="document.getElementById('dragon').src = './assets/images/dragon.png'">Dragon!
+            </button>
             <div id="header-buttons">
                 <button type="button" id="button-about">
                     <a href="./index.html">About</a>
@@ -38,11 +42,11 @@
 
     <section>
         <div class="main-content clearfix">
-            <h2 class="main-content-header">
+            <h2 class="main-content-header" id="about-hinduism">
                 About Me
             </h2>
 
-            <a id="my-pic"><img src="./assets/images/mike.jpg"></a>
+            <a id="my-pic"><img id="dragon" src="./assets/images/mike.jpg"></a>
             <!--<a id="my-pic" href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
             -->
             <p class="paragraph-me">
