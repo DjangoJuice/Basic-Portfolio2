@@ -1,70 +1,99 @@
-<!doctype html>
-<html lang="en-us">
-<!-- START HEAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->   
-    <head>
-        <metadata charset="UTF-8">
-        <title>Contact Mike</title>
-        <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
-    </head>
-<!-- END HEAD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Contact Mike</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+</head>
 
 
 
-<!-- START BODY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <body>
+<body>
 
-<!-- START HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <header>
-            <div class="header-center">
-                <h1 id="header-name">
-                    Mike Stewart
-                </h1>
-                <div id="header-buttons">
-                    <button type="button" id="button-about">
-                        <a href="./index.html">About</a>
-                    </button>
-                    <button type="button" id="button-portfolio">
-                        <a href="./portfolio.html">Portfolio</a>
-                    </button>
-                     <button type="button" id="button-contact">
-                        <a href="./contact.html">Contact</a>
-                    </button>
-                </div>
-            </div>
-        </header>
-<!-- END HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-
-        <section>
-            <div class="main-content clearfix">
+<header>
+    <div class="container" id="contact-Header">
+        <h1 id="header-name">
+                Mike Stewart
+        </h1>
+    </div>
+    <div class="container" id="contact-Buttons">
+        <button class="btn" id="button-about">About</button>
+        <button class="btn" id="button-portfolio">Portfolio</button>
+        <button class="btn" id="button-contact">Contact</button>
+    </div>
+                
     
-                <h2 class="main-content-header">
-                    Contact
-                </h2>
-<!-- start form -->
-                <label id="label-name">Name</label>
-                <input type="text" id="input-name" placeholder="Your Name">
+</header>
 
-                <label id="label-email">Email</label>
-                <input type="text" id="input-email" placeholder="example@domain.com">
+<section>
+    <div class="container" id="contact-Section">
 
-                <label id="label-message">Message</label>
-                <textarea id="input-message" style="height:200px"></textarea>
+        <h2 class="main-content-header">
+            Contact
+        </h2>
+<!-- Contact Form Goes Here -->
+<form>
+    <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" class="form-control" id="contactFullName" placeholder="John Doe">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
+    </div>
+    <div class="form-group">
+    <input class="form-control form-control-lg" type="text" placeholder="Message me here....">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
-                <button type="button" id="button-submit">
-                    Submit 
-                </button>
-<!-- end form -->
-
-            </div>
-        </section>
+    </div>
+</section>
     
 
         
-        <footer>
+<footer>
 <!-- FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->    
-        </footer>
+</footer>
+
+<script>
+// Button in the header
+    $("#button-about").click(function(){
+    window.location.href='./index.html';
+});
+    $("#button-portfolio").click(function(){
+    window.location.href='./portfolio.html';
+});
+    $("#button-contact").click(function(){
+    window.location.href='./contact.html';
+}); // End of buttons in the header
+
+// var contactForm = $("<form>");
+// contactForm.append("<label id='label-name'>Name</label>");
+// contactForm.append("<input type='text' id='input-name' placeholder='Your Name'>");
+// contactForm.append("<label id='label-email'>Email</label>");
+// contactForm.append("<input type='text' id='input-email' placeholder='example@domain.com'>");
+// contactForm.append("<label id='label-message'>Message</label>");
+// contactForm.append("<textarea id='input-message' style='height:200px'></textarea>");
+// contactForm.append("<button type='button' id='button-submit'>Submit </button>");
+// $("#contact-Section").append(contactForm);
+</script>
         
 
     </body>
